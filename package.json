@@ -1,0 +1,21 @@
+{
+  "name": "v2c",
+  "version": "1.0.0",
+  "description": "Once Human landing page",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./input.css -o ./css/tailwind.css --minify",
+    "build:assets": "node ./scripts/prepare-assets.js",
+    "build": "npm run build:assets && npm run build:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
